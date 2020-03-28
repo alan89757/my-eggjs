@@ -8,8 +8,9 @@ class IndexController extends Controller {
     this.ctx.body = 'admin page';
   }
   async postData() {
-    this.ctx.body = "post data";
-    // this.ctx.body = this.ctx.request.body;
+    // this.ctx.body = "post data";
+    console.log(this.ctx.request.body)
+    this.ctx.body = this.ctx.request.body;
   }
 }
 
