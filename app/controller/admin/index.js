@@ -5,7 +5,10 @@ const Controller = require('egg').Controller;
 class IndexController extends Controller {
   async index() {
     // this.ctx.cookies.set("testToken", "111111");   // 设置cookie
-    this.ctx.body = 'admin page';
+    // console.log(this.ctx.service.user.admin.find());
+    const result = await this.ctx.service.user.admin.find();
+    console.log(result)
+    this.ctx.body = result;
   }
   async postData() {
     // this.ctx.body = "post data";

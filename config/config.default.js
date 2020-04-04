@@ -9,5 +9,6 @@ module.exports = {
       port: "27017",
       name: "doracms2"
     }
-  }
+  },
+  uploadDir: "C:/projectNew/my-eggjs/upload"
 }
