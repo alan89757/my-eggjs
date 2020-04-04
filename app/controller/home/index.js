@@ -6,7 +6,10 @@ const path = require("path");
 
 class HomeController extends Controller {
   async index() {
-    this.success(this.config.keys);
+    this.success({
+      keys: this.config.keys,
+      count: this.app.count
+    });
   }
   async middleware() {
     this.app.middleware.filter({}, this.app);

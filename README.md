@@ -14,8 +14,5 @@
 ## 8.middleWare
 ## 9.redirect
 
-## 1.middleWare
 ## 2.文件上传
-## 4.curl
 ## 6.plugin
-## 7.插件
