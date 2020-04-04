@@ -20,8 +20,10 @@
 ### egg-web.log  --插件相关日志
 ### my-eggjs.log  --应用日志
 ### application_config.json / application_config_meta.json
-### 应用扩展  extend/application.js
 
+## 11.应用扩展  extend/application.js
+## 12.Symbol --定义私有属性
+### Object.getOwnPropertySymbols   --获取symbol对象
 
 
 ## 2.文件上传

@@ -58,7 +58,9 @@ class HomeController extends Controller {
     this.ctx.body = "日志测试";
   }
   async extend() {
-    this.success(this.app.addNum);
+    this.success({
+      count: this.app.addCount
+    });
     // this.ctx.body = "应用扩展...";
   }
 }
