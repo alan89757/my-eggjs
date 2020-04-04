@@ -1,6 +1,9 @@
 # my-eggjs
 
 # 实现以下功能
+## 1.base Controller
+## 2.post传参
+
 ## 1.middleWare
 ## 2.文件上传
 ## 3.post传参

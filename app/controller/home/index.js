@@ -20,6 +20,10 @@ class HomeController extends Controller {
     stream.pipe(ws);
     this.ctx.body = "上传成功";
   }
+  async handleCookie() {
+    this.ctx.cookies.set("x-dyeing", 1000);
+    this.ctx.body = "cookie设置成功";
+  }
 }
 
 module.exports = HomeController;
