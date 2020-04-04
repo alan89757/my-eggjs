@@ -11,7 +11,8 @@
 ### 3.this.app.mongo.db.collection('collectionName').find({}).toArray();
 ## 6.this.ctx.helper.pathFor/urlFor
 ## 7.curl
-## 8.
+## 8.middleWare
+## 9.redirect
 
 ## 1.middleWare
 ## 2.文件上传

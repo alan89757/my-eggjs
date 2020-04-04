@@ -6,8 +6,12 @@ const path = require("path");
 
 class HomeController extends Controller {
   async index() {
-    // this.ctx.body = this.config.keys;
     this.success(this.config.keys);
+  }
+  async middleware() {
+    this.app.middleware.filter({}, this.app);
+    this.success(this.config.keys);
+    // this.ctx.body = "middleware123";
   }
   async upload() {
     const {
@@ -29,8 +33,11 @@ class HomeController extends Controller {
     this.success(result);
   }
   async curl() {
-    const result = await this.ctx.curl(this.ctx.helper.urlFor("newslist"));
-    this.ctx.body = result;
+    const result = await this.ctx.curl(this.ctx.helper.urlFor("homeIndex"), {
+      method: "GET",
+      dataType: "json"
+    });
+    this.ctx.body = result.data;
   }
 }
 

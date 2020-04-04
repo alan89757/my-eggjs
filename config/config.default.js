@@ -7,8 +7,15 @@ module.exports = {
     client: {
       host: "127.0.0.1",
       port: "27017",
-      name: "doracms2"
+      name: "doracms2",
+      options: {
+        useNewUrlParser: true
+      }
     }
+  },
+  middleware: ['filter'],
+  filter: {
+    redirectUrl: 'https://baidu.com'
   },
   uploadDir: "C:/projectNew/my-eggjs/upload"
 }
