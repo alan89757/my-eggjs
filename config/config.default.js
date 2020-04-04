@@ -17,5 +17,9 @@ module.exports = {
   filter: {
     redirectUrl: 'https://baidu.com'
   },
+  logger: {
+    level: "DEBUG",
+    consoleLevel: "DEBUG"
+  },
   uploadDir: "C:/projectNew/my-eggjs/upload"
 }

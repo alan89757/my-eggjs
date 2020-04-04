@@ -13,6 +13,16 @@
 ## 7.curl
 ## 8.middleWare
 ## 9.redirect
+## 10.日志
+### common-error.log  --异常日志
+### egg-agent.log  --进程日志
+### egg-schedule.log  --定时任务日志
+### egg-web.log  --插件相关日志
+### my-eggjs.log  --应用日志
+### application_config.json / application_config_meta.json
+### 应用扩展  extend/application.js
+
+
 
 ## 2.文件上传
 ## 6.plugin

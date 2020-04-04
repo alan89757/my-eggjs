@@ -16,4 +16,9 @@ module.exports = app=> {
   router.get('newslist', '/getNews', controller.home.index.getNews);
 
   router.get('/handleCookie', controller.home.index.handleCookie);  // 设置cookie
+
+  router.get('/log', controller.home.index.log);   // 日志
+  
+  router.get('/extend', count, controller.home.index.extend); 
+
 }

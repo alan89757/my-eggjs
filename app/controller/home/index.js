@@ -42,6 +42,25 @@ class HomeController extends Controller {
     });
     this.ctx.body = result.data;
   }
+  async log() {
+    const logger = this.ctx.logger;
+    logger.debug(new Error("logger调试日志"));
+    logger.info(new Error("logger提示信息"));
+    logger.warn(new Error("logger警告信息"));
+    logger.error(new Error("logger异常信息"));
+
+    const coreLogger = this.ctx.coreLogger;
+    coreLogger.debug(new Error("coreLogger调试日志"));
+    coreLogger.info(new Error("coreLogger提示信息"));
+    coreLogger.warn(new Error("coreLogger警告信息"));
+    coreLogger.error(new Error("coreLogger异常信息"));
+
+    this.ctx.body = "日志测试";
+  }
+  async extend() {
+    this.success(this.app.addNum);
+    // this.ctx.body = "应用扩展...";
+  }
 }
 
 module.exports = HomeController;
