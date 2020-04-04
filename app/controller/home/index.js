@@ -27,6 +27,13 @@ class HomeController extends Controller {
     stream.pipe(ws);
     this.ctx.body = "上传成功";
   }
+  async download() {
+    // this.ctx.body = "11111";
+    const filePath = path.resolve(this.config.uploadDir, 'test.json');
+    const stream = fs.createReadStream(filePath);
+    this.ctx.attachment("test.json");
+    this.ctx.body = stream;
+  }
   async handleCookie() {
     this.ctx.cookies.set("x-dyeing", 1000);
     this.ctx.body = "cookie设置成功";

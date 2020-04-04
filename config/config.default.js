@@ -21,5 +21,5 @@ module.exports = {
     level: "DEBUG",
     consoleLevel: "DEBUG"
   },
-  uploadDir: "C:/projectNew/my-eggjs/upload"
+  uploadDir: "C:/projectNew/my-eggjs/upload/"
 }

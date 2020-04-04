@@ -5,7 +5,8 @@ module.exports = app=> {
 
   router.get("homeIndex", '/index', count, controller.home.index.index);  // txt,ts上传失败
   
-  router.post('/upload', controller.home.index.upload);
+  router.post('/upload', controller.home.index.upload);   // 上传
+  router.get('/download', controller.home.index.download);  // 下载
 
   router.redirect('/', '/index', 302);  // 重定向
   
