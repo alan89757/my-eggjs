@@ -25,9 +25,12 @@ class HomeController extends Controller {
     this.ctx.body = "cookie设置成功";
   }
   async getNews() {
-    console.log(11111)
     const result = await this.ctx.service.user.admin.find();
-    this.success(result)
+    this.success(result);
+  }
+  async curl() {
+    const result = await this.ctx.curl(this.ctx.helper.urlFor("newslist"));
+    this.ctx.body = result;
   }
 }
 

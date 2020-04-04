@@ -9,7 +9,6 @@ class AdminService extends Service {
       .collection('news')
       .find({})
       .toArray();
-      console.log(result)
       return result;
   }
 }
