@@ -1,4 +1,4 @@
 exports.mongo = {
-  enable: false,
-  package: 'egg-mongo-native'
+  enable: true,
+  package: "egg-mongo-native"
 }

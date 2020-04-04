@@ -24,6 +24,11 @@ class HomeController extends Controller {
     this.ctx.cookies.set("x-dyeing", 1000);
     this.ctx.body = "cookie设置成功";
   }
+  async getNews() {
+    console.log(11111)
+    const result = await this.ctx.service.user.admin.find();
+    this.success(result)
+  }
 }
 
 module.exports = HomeController;
