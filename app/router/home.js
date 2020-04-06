@@ -4,6 +4,10 @@ module.exports = app=> {
   const count = app.middleware.count({}, app);
 
   router.get("homeIndex", '/index', count, controller.home.index.index);  // txt,ts上传失败
+
+  router.get('/ext', controller.home.index.ext);
+  
+  router.get('/start', controller.home.index.start);
   
   router.post('/upload', controller.home.index.upload);   // 上传
   router.get('/download', controller.home.index.download);  // 下载

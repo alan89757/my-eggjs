@@ -70,6 +70,19 @@ class HomeController extends Controller {
     });
     // this.ctx.body = "应用扩展...";
   }
+  // 测试ext插件
+  async ext() {
+    this.success({
+      ext: this.ctx.helper.info
+    });
+  }
+  // 测试start插件
+  async start() {
+    console.log(this)
+    this.success({
+      start: this.app.configs
+    });
+  }
 }
 
 module.exports = HomeController;

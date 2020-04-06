@@ -1,6 +1,6 @@
 {
-  "name": "egg-schedule",
+  "name": "alanschedule",
   "eggPlugin": {
-    "name": "egg-schedule"
+    "name": "alanschedule"
   }
 }
