@@ -27,5 +27,9 @@
 ## 14.插件 plugin
 ### 中间件 -拦截用户请求，处理请求前后
 ### 扩展   -给application/context/request/response/helper对象新增方法和属性
-### 插件   -完成特定任务，如数据库连接 egg-mongo-native等
-
+### 插件   -完成特定任务，如数据库连接 egg-mongo-native
+### plugin.js 配置package, 
+#### npm link ../egg-ext 指向本地
+#### npm link ../egg-middleware 指向本地
+#### npm link ../egg-schedule 指向本地
+#### npm link ../egg-start 指向本地

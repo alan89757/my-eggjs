@@ -7,24 +7,24 @@ exports.mongo = {
 
 exports.ext = {
   enable: true,
-  path: path.resolve(__dirname, '../lib/plugin/egg-ext')
-  // package: "egg-ext"
+  // path: path.resolve(__dirname, '../lib/plugin/egg-ext')
+  package: "egg-ext"
 }
 
 exports.middleware = {
   enable: true,
-  path: path.resolve(__dirname, '../lib/plugin/egg-middleware')
-  // package: "egg-middleware"
+  // path: path.resolve(__dirname, '../lib/plugin/egg-middleware')
+  package: "egg-middleware"
 }
 
 exports.alanschedule = {
   enable: true,
-  path: path.resolve(__dirname, '../lib/plugin/egg-schedule')
-  // package: "egg-schedule"
+  // path: path.resolve(__dirname, '../lib/plugin/egg-schedule')
+  package: "egg-schedule"
 }
 
 exports.start = {
   enable: true,
-  path: path.resolve(__dirname, '../lib/plugin/egg-start')
-  // package: "egg-start"
+  // path: path.resolve(__dirname, '../lib/plugin/egg-start')
+  package: "egg-start"
 }
