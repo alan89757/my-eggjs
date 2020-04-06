@@ -1,0 +1,6 @@
+{
+  "name": "egg-middleware",
+  "eggPlugin": {
+    "name": "middleware"
+  }
+}

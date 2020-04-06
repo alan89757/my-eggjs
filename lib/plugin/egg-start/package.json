@@ -1,0 +1,6 @@
+{
+  "name": "egg-start",
+  "eggPlugin": {
+    "name": "start"
+  }
+}

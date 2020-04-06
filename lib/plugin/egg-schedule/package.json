@@ -1,0 +1,6 @@
+{
+  "name": "egg-schedule",
+  "eggPlugin": {
+    "name": "egg-schedule"
+  }
+}
